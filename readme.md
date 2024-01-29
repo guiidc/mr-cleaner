@@ -3,6 +3,11 @@
 ## 🚧 Sobre o projeto
 Este projeto trata-se de um desafio da Facilita Jurídico, que consiste em dois níveis. Um CRUD simples e uma resolução de algoritimo. 
 
+<img src="https://ibb.co/RjTmKQd" alt="drawing" width="200"/>
+<img src="https://ibb.co/SR2ZDVX" alt="drawing" width="200"/>
+<img src="https://ibb.co/yV261WJ "alt="drawing" width="200"/>
+
+
 ## Tudo bem, mas como eu rodo isso dai 🧐?
 O projeto conta com docker, então basta rodar o seguinte comando na raiz do projeto:
 ```bash
