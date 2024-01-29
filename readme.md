@@ -24,9 +24,15 @@ Obs.: O serviço de backend já conta com o seed básico de um usuário.
 - **Usuário**: admin@mail.com
 - **Senha**: 123456
 
+# 🚕 SOBRE O PROBLEMA DAS ROTAS
+Uma das partes importantes do desafio era resolver um problema de rotas para deslocamento da empresa.
+Este problema é um problema clássico de grafos, porém eu não possuia conhecimento sobre o mesmo, então tive que estudar e aprender sobre o mesmo.
+O interessante é que existem diversos algoritimos famosos para resolver este problema, porém todos sofrem com a alta entrada de dados, o que torna o algoritimo lento e seu estilo de brute force não contribui muito para a performance.
+Pesquisando um pouco comecei a estudar sobre um algoritimo de 2-opt, que é um algoritimo de busca local, que consiste em pegar uma rota e ir trocando os nós de lugar até encontrar a melhor rota possível.
+
 # 🛠 SOBRE OS SERVIÇOS
 
-## ⚙️BACKEND
+## ⚙️ BACKEND
 O Backend foi feito em NodeJS com Express e TypeScript. Foi utilizado orientação a objetos e DI (Injeção de dependências) para forçar uma baixa coesão entre os componentes.
 Não foram implementados os procotoclos (interfaces) e por se tratar de um simples desafio, porém caso necessário possuo este conhecimento também. A arquitetura escolhida foi o MSC (Model, Service e Controller), porém possuo
 conhecimentos de arquiteturas mais complexas e novas como Clean Architecture e Arquitetura Hexagonal.
