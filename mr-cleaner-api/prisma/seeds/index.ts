@@ -1,18 +1,16 @@
-import { PrismaClient } from '@prisma/client'
 import { seedRoles } from './roles'
 import { seedUsers } from './users'
-const prisma = new PrismaClient()
-
+import db from '../../src/database/connection'
 async function main (): Promise<void> {
   const roles = await seedRoles()
   await seedUsers(roles)
 }
 main()
   .then(async () => {
-    await prisma.$disconnect()
+    await db.$disconnect()
   })
   .catch(async (e) => {
     console.error(e)
-    await prisma.$disconnect()
+    await db.$disconnect()
     process.exit(1)
   })
