@@ -3,9 +3,9 @@
 ## 🚧 Sobre o projeto
 Este projeto trata-se de um desafio da Facilita Jurídico, que consiste em dois níveis. Um CRUD simples e uma resolução de algoritimo. 
 
-<img src="https://ibb.co/RjTmKQd" alt="drawing" width="200"/>
-<img src="https://ibb.co/SR2ZDVX" alt="drawing" width="200"/>
-<img src="https://ibb.co/yV261WJ "alt="drawing" width="200"/>
+<img src="https://i.ibb.co/Z2zPrc7/Captura-de-Tela-2024-01-29-a-s-09-14-07.png" alt="drawing" width="200"/>
+<img src="https://i.ibb.co/0hkzpYj/Captura-de-Tela-2024-01-29-a-s-09-16-10.png" alt="drawing" width="200"/>
+<img src="https://i.ibb.co/Fnp5Mgt/Captura-de-Tela-2024-01-29-a-s-09-16-23.png" alt="drawing" width="200"/>
 
 
 ## Tudo bem, mas como eu rodo isso dai 🧐?
