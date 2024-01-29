@@ -1,0 +1,64 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["linux-musl-arm64-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                String      @id @default(uuid())
+  email             String      @unique
+  name              String
+  password          String
+  role_id           String
+  last_access_token String?
+  created_at        DateTime    @default(now())
+  updated_at        DateTime    @updatedAt
+  deleted_at        DateTime?
+  role              Role        @relation(fields: [role_id], references: [id])
+  access_logs       LogAccess[]
+
+  @@map("users")
+}
+
+model Role {
+  id         String    @id @default(uuid())
+  role       String    @unique
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+  deleted_at DateTime?
+  users      User[]
+
+  @@map("roles")
+}
+
+model Company {
+  id           String    @id @default(uuid())
+  name         String
+  email        String    @unique
+  phone        String    @unique
+  coordinate_x Float
+  coordinate_y Float
+  created_at   DateTime  @default(now())
+  updated_at   DateTime  @updatedAt
+  deleted_at   DateTime?
+
+  @@map("companies")
+}
+
+model LogAccess {
+  id         Int       @id @default(autoincrement())
+  user_id    String
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+  deleted_at DateTime?
+  user       User      @relation(fields: [user_id], references: [id])
+
+  @@map("logs_access")
+}

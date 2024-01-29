@@ -1,0 +1,20 @@
+.input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+
+    &:focus {
+        outline: 2px solid #009848;
+    }
+
+    &[data-invalid="true"] {
+        border: 1px solid #f10000;
+
+        &:focus {
+            outline: 1px solid #f10000;
+        }
+    }
+}

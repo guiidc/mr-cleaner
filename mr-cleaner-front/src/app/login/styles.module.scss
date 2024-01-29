@@ -1,0 +1,38 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../../../public/svg/zig-zag.svg")
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 268px;
+  gap: 0.5rem;
+}
+
+.title {
+  background: -webkit-linear-gradient(#05a860, #16985c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cardTitle {
+  font-style: italic;
+  color: #2f2f2f;
+  text-transform: uppercase;
+}
+
+.helperContainer {
+  font-style: italic;
+  color: #f10000;
+  font-size: 0.8rem;
+  text-align: center;
+}

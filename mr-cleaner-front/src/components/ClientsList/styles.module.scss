@@ -1,0 +1,59 @@
+.clientsList {
+  margin: 1rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1000px;
+  flex-wrap: wrap;
+
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  width: 268px;
+  max-width: 268px;
+}
+
+.name {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+  width: 268px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.info {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  color: #6b6b6b;
+
+  span {
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  svg {
+    fill: #05a860;
+  }
+}
+
+
+.buttonsContainer {
+  margin-top: 0.5rem;
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+  justify-content: center;
+}
