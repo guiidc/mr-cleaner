@@ -9,7 +9,8 @@
     "start:docker": "NODE_ENV=production npx prisma generate && npx prisma migrate deploy && npx prisma db seed && node dist/src/server.js"
   },
   "prisma": {
-    "seed": "ts-node prisma/seeds/index.ts"
+    "seed:old": "ts-node prisma/seeds/index.ts",
+    "seed": "node dist/prisma/seeds/index.js"
   },
   "keywords": [],
   "author": "Guilherme da Costa",
